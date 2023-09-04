@@ -19,8 +19,8 @@ window:
   # Specified in number of columns/lines, not pixels. If both are zero this
   # setting is ignored.
   dimensions:
-    columns: 120
-    lines: 60
+    columns: 0
+    lines: 0
 
   # Window padding (changes require restart)
   #
@@ -54,7 +54,7 @@ window:
   startup_mode: Windowed
 
   # Background opacity
-  opacity: 0.95
+  opacity: 0.85
 
 scrolling:
   # maximum number of lines in the scrollback buffer. Specifying '0' will
@@ -70,23 +70,26 @@ font:
   # The normal (roman) font face to use.
   # Style can be specified to pick a specific face.
   normal:
-    family: "JuliaMono Nerd Font Mono"
-    style: Light
+    # family: "JuliaMono Nerd Font Mono"
+    family: JuliaMono
+    style: Medium
     # family: "Fira Code"
     # family: "Source Code Pro"
     # style: Retina
 
   # The bold font face
   bold:
-    family: "JuliaMono Nerd Font Mono"
-    style: Medium
+    # family: "JuliaMono Nerd Font Mono"
+    family: JuliaMono
+    style: SemiBold
     # family: "Fira Code"
     # family: "Source Code Pro"
 
   # The italic font face
   italic:
-    family: "JuliaMono Nerd Font Mono"
-    style: "Light Italic"
+    # family: "JuliaMono Nerd Font Mono"
+    family: JuilaMono
+    style: "Medium Italic"
     # style: "Light Oblique"
     # family: "Fira Code"
     # family: "Source Code Pro"
@@ -130,6 +133,8 @@ draw_bold_text_with_bright_colors: false
 # Use custom cursor colors. If true, display the cursor in the cursor.foreground
 # and cursor.background colors, otherwise invert the colors of the cursor.
 custom_cursor_colors: true
+
+# git clone https://github.com/alacritty/alacritty-theme ~/.config/alacritty/themes
 
 import:
   - "C:\\Users\\dalem\\AppData\\Roaming\\alacritty\\themes\\themes\\zenburn.yaml"
@@ -497,7 +502,7 @@ debug:
 # You can set shell.program to the path of your favorite shell, e.g. /bin/fish.
 # Entries in shell.args are passed unmodified as arguments to the shell.
 shell:
-  program: pwsh
+  program: zsh #pwsh
     # args:
     # - --cd ~
 
