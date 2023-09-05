@@ -54,7 +54,7 @@ window:
   startup_mode: Windowed
 
   # Background opacity
-  opacity: 0.85
+  opacity: 0.95
 
 scrolling:
   # maximum number of lines in the scrollback buffer. Specifying '0' will
@@ -70,8 +70,8 @@ font:
   # The normal (roman) font face to use.
   # Style can be specified to pick a specific face.
   normal:
-    # family: "JuliaMono Nerd Font Mono"
-    family: JuliaMono
+    family: "JuliaMono Nerd Font Mono"
+    # family: JuliaMono
     style: Medium
     # family: "Fira Code"
     # family: "Source Code Pro"
@@ -79,16 +79,16 @@ font:
 
   # The bold font face
   bold:
-    # family: "JuliaMono Nerd Font Mono"
-    family: JuliaMono
+    family: "JuliaMono Nerd Font Mono"
+    # family: JuliaMono
     style: SemiBold
     # family: "Fira Code"
     # family: "Source Code Pro"
 
   # The italic font face
   italic:
-    # family: "JuliaMono Nerd Font Mono"
-    family: JuilaMono
+    family: "JuliaMono Nerd Font Mono"
+    # family: JuilaMono
     style: "Medium Italic"
     # style: "Light Oblique"
     # family: "Fira Code"
@@ -502,7 +502,8 @@ debug:
 # You can set shell.program to the path of your favorite shell, e.g. /bin/fish.
 # Entries in shell.args are passed unmodified as arguments to the shell.
 shell:
-  program: zsh #pwsh
+  # program: zsh
+  program: pwsh
     # args:
     # - --cd ~
 
